@@ -3,7 +3,12 @@ A proof of concept for visualizing personal finances.
 
 ## Requirements
 
-After cloning repository install requirements with:
+Clone repository:
+```
+    git clone https://github.com/gcammarota/ing.git
+```
+
+Then install requirements with:
 ```
     cd ing
     pip install -U -r requirements.txt
