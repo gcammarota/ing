@@ -8,6 +8,8 @@ from setuptools import setup, find_packages
 
 
 version = "0.1.0"
+
+
 setup(
     name="ing",
     version=version,
@@ -35,4 +37,11 @@ setup(
         'Operating System :: OS Independent',
         'License :: OSI Approved :: Apache Software License',
         'Topic :: Scientific/Engineering :: Finance',
-    ],)
+    ],
+    keywords='',
+    entry_points={
+        'console_scripts': [
+            'ing = ing.app:run',
+        ],
+    },
+)

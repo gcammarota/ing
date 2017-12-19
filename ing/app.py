@@ -2,15 +2,16 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 
-import plot
+from . import plot
 
-app = dash.Dash()
-app.layout = html.Div([
-    dcc.Graph(
-        id='Saldo',
-        figure=plot.storia_saldi()
-    )
-])
 
-if __name__ == '__main__':
+def run():
+    app = dash.Dash()
+    app.layout = html.Div([
+        dcc.Graph(
+            id='Saldo',
+            figure=plot.storia_saldi()
+        )
+    ])
+
     app.run_server()
