@@ -14,9 +14,14 @@ Then install requirements with:
     pip install -U -r requirements.txt
 ```
 
+## Install
+```
+    pip install -e .
+
+```
 ## Run
 
-Launch application with:
+Launch application:
 ```
-    python ing/app.py
+    ing
 ```
